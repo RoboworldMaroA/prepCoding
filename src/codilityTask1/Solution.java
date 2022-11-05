@@ -28,33 +28,38 @@ class Solution {
 
         public static void main(String args[]) {
 
-            int[] A = new int[]{1, 3, 6, 4, 1, 2};
+            int[] A1 = new int[]{1, 3, 6, 4, 1, 2};//test 1
+            int[] A2 = new int[]{1, 2, 3};//test 2
+            int[] A3 = new int[]{-2,-1};//test 3
 
-//            for (int i = 0; i <= A.length-1; i++) {
-//
-//                System.out.print(A[i]+",");
-//
-//            }
-             solution(A);
+            //Create object to get a value from a solution
+            Solution missingIntegerInSolution = new Solution();
+            System.out.println("Test one : Missing value is: "+ missingIntegerInSolution.solution(A1));
+            System.out.println("Test two : Missing value is: "+ missingIntegerInSolution.solution(A2));
+            System.out.println("Test three : Missing value is: "+ missingIntegerInSolution.solution(A3));
+
+//            solution(A1);
 
         }
 
 
-        static int solution(int[] A) {
+        public int solution(int[] A) {
             // write your code in Java SE 11
             int answer = 1;
-            //sort array
+            //sort array from smallest to the biggest
             Arrays.sort(A);
 
             for (int i = 0; i < A.length; i++) {
-//                System.out.print(A[i]+",");
+//                System.out.print(A[i]+",");//test only
+                //if element in the sorted array is equal the answer the increment the answer
                 if(A[i]==answer){
                     answer++;
                 }
 
             }
+            //if the looped value is not equal the incremented value it means that this value is not in the array and is the smallest value
             return  answer;
-        }
+        }//end of the solution method
 
 
     }
