@@ -20,7 +20,6 @@ public class reverseStringUsingReverse {
         StringBuilder newString = new StringBuilder();
 
        //copy  String to the newString
-
         newString.append(word);
 
 
@@ -28,7 +27,7 @@ public class reverseStringUsingReverse {
         newString=newString.reverse();
 
         //remove character in the middle
-        newString=newString.deleteCharAt(1);
+//        newString=newString.deleteCharAt(1);
 
         //at the end return new reversed string
         return newString.toString();
@@ -40,7 +39,7 @@ public class reverseStringUsingReverse {
     //main method
 
     public static void main(String args[]){
-        String word="abc";
+        String word="mareka";
 
         //print a reversed word in the function reverseWord
         System.out.println("This is word: " + reverseWord(word));
