@@ -7,7 +7,8 @@ Array A contains only 0s and/or 1s:
 
 0 represents a car traveling east,
 1 represents a car traveling west.
-The goal is to count passing cars. We say that a pair of cars (P, Q), where 0 ≤ P < Q < N, is passing when P is traveling to the east and Q is traveling to the west.
+The goal is to count passing cars. We say that a pair of cars (P, Q), where 0 ≤ P < Q < N,
+is passing when P is traveling to the east and Q is traveling to the west.
 
 For example, consider array A such that:
 
@@ -48,12 +49,17 @@ public class PassingCars {
         int[] A = new int[]{0, 1, 0, 1, 1};//answer 5
         int[] A1 = new int[]{0, 1, 0, 0, 1};//answer 4
         int[] A2 = new int[]{0, 1, 1, 1, 1,0,1};//answer 6
-        int[] A3 = new int[]{0, 1, 1, 1, 1,0,1,0,1,1,1,1,1,};//answer 6
+        int[] A3 = new int[]{0, 1, 1, 1, 1,0,1,0,1,1,1,1,1};//answer 21
+        int[] A4 = new int[]{1, 1, 1, 1, 1,1,1,1,1,1,1,0,1};//answer 21
         // object of the solution
         PassingCars answerSolution = new PassingCars();
 
-        int result = answerSolution.solution2(A);
+        int result = answerSolution.solution2(A1);
             System.out.println(result);
+
+        //version 2
+        int result2 = answerSolution.solution2(A4);
+        System.out.println(result2);
      }
 
      //this solution give you 50%
@@ -75,7 +81,7 @@ public class PassingCars {
             }
 
 
-
+    //this solution 100%
     public int solution2 ( int[] A) {
 
         int passingCars = 0;

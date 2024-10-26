@@ -3,7 +3,7 @@ package Leetcode.questionOne;
 import java.util.HashMap;
 import java.util.Map;
 
-//not sure is ok i have from you tube video
+//Tested on LeetCode website
 
 class Solution {
     //this is given on the beginning in question
@@ -21,9 +21,9 @@ class Solution {
 
     public static void main(String[] args) {
         //input
-        int[] nums = new int[] {1,5,3,4,2,4,4,3,2,4,9,9};
+        int[] nums = new int[] {1,5,3,4,2,4,4,3,2,4,9};
        //target
-        int target = 10;
+        int target = 4;
        //result array
         int[] result = twoSum(nums,target);
 

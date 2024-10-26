@@ -10,7 +10,8 @@ public class StarterClass {
         int Y=85;
         int D=30;
 
-    // object of the solution
+    // object of the solution where StarterClass is a name of the java class so when you copy
+        // and paste then change this for a class name of the ne task
     StarterClass answerSolution = new StarterClass();
         System.out.println("Answer : " + answerSolution.solution(X,Y,D));
 
